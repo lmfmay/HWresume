@@ -1,0 +1,123 @@
+#resumeContainer {
+    display: flex;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header, #summary, #columns {
+    display: flex;
+    max-width: 90vw;
+    justify-content: space-around;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+#profileContain {
+    display: flex;
+    margin: auto;
+}
+
+#profileimg img {
+    max-width: 150px;
+    border: none;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+
+#jobtitle {
+    color: dodgerblue;
+    font-size: medium;
+    font-weight:300;
+    position: relative;
+    top: -15px;
+}
+
+
+#personalinfo {
+    display: flex;
+    margin: auto;
+    
+}
+
+#infofields>p {
+    font-weight: 600;
+    margin: 10px;
+}
+
+#infovalues>p {
+    margin: 10px;
+}
+
+#summary {
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(99, 100, 100);
+}
+
+#columns {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+#leftcolumn {
+    flex-grow:2;
+    margin-right: 1rem;
+}
+
+#rightcolumn {
+    flex-grow:1;
+}
+
+#employment>h2::before {
+    content: "\1F3E2";
+    font-size: large;
+}
+
+#education>h2::before {
+    content: "\1F393";
+    font-size: large;
+}
+
+
+.category, .orgrole h2,h3 {
+    font-size: medium;
+    font-weight:700;
+}
+
+.itemheader {
+    display: flex;
+    position: relative;
+    top: -10px;
+}
+
+.date {
+    margin-left: auto;
+    font-size: medium;
+    font-weight:400;
+    color: rgb(99, 100, 100);
+}
+
+.des, .role {
+    position: relative;
+    top:-10px;
+    color: rgb(99, 100, 100);
+    font-weight:400;
+}
+
+.category {
+    background-color: rgb(223, 226, 228);
+}
+
+.des p {
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(223, 226, 228);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.skillimg {
+    width: 10rem;
+}
