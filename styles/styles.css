@@ -2,14 +2,13 @@
     display: flex;
     flex-direction: column;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 60vw;
+    width: 99vw;
     margin: auto;
     border: 1px solid rgb(224, 224, 224);
 }
 
 #header, #summary, #columns {
     display: flex;
-    /* max-width: 90vw; */
     justify-content: space-around;
     margin-top: 3rem;
     flex-wrap: wrap;
@@ -18,15 +17,16 @@
 #profileContain {
     display: flex;
     margin: auto;
+    padding: 0 2em;
 }
 
 #profileimg img {
-    max-width: 150px;
+    max-width: 120px;
     border: none;
     border-radius:50%;
     margin-right:10px;
+    box-shadow: 2px 2px 2px rgb(196, 195, 195);
 }
-
 
 #jobtitle {
     color: dodgerblue;
@@ -36,11 +36,10 @@
     top: -15px;
 }
 
-
 #personalinfo {
     display: flex;
     margin: auto;
-    
+    padding: 0 2em;
 }
 
 #infofields>p {
@@ -124,10 +123,23 @@ a {
 }
 
 .skillimg {
-    width: 10rem;
-    transition: all 2s;
+    width: 10em;
+    transition: all 1s ease-in-out;
 }
 
 .skillimg:hover {
-    width: 20rem;
+    width: 11em;
+}
+
+/* Responsive layout that contains layout on large screens */
+@media screen and (min-width: 750px) {
+    #resumeContainer {
+      width: 60vw;
+  }
+}
+/* Responsive layout that expands layout in landscape mode */
+@media screen and (orientation: landscape  max-width: 749px) {
+#resumeContainer {
+    width: 99vw;
+}
 }
